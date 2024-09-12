@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: rgb(195, 190, 233);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+    width: 350px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(92, 42, 101);
+    border-radius: 3px ;
+    outline: none; 
+}
+
+input:focus {
+    border-color: #610a7d; /* Ajusta el color del borde cuando el input está en foco */
+    box-shadow: 0 0 5px #61376f;
+}
+
+input[type="submit"] {
+    background-color: rgb(118, 69, 165);
+    color: aliceblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s ease;
+    
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(96, 23, 164);;
+}
+
+/*mensajes de error */
+.error-message {
+    color: brown;
+    font-size: 10px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.fa-solid {
+    position: relative;
+    top: -30px;
+    float:right;
+    color: rgb(216, 222, 226);
+    font-size: 12px;
+    padding-right: 5px;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+
